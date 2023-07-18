@@ -1,0 +1,147 @@
+:root {
+    --logo-color: white;
+    --button-color: #596D48;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    display: flex;
+}
+
+#sidebar {
+    background: url(assets/halie-west-25xggax4bSA-unsplash.jpg) no-repeat;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sidebar a {
+    color: var(--logo-color);
+}
+
+#credit {
+    color: var(--logo-color);
+    text-align: center;
+    opacity: .75;
+}
+
+#logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+    position: relative;
+    top: 25%;
+    bottom: auto;
+    height: 12rem;
+    box-sizing: border-box;
+}
+
+#logo-section h1 {
+    color: var(--logo-color);
+    font-family: 'Norse';
+    font-size: 8rem;
+    height: 6rem;
+}
+
+#logo-section img {
+    height: 10rem;
+    width: auto;
+}
+
+#main-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#section-1,
+#section-3 {
+    background-color: whitesmoke;
+    height: 35%;
+}
+
+#section-1 {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+#section-2 {
+    background-color: white;
+    height: 30%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#section-3 {
+    font-size: 1.3rem;
+}
+
+#section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#section-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#main-section a {
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+#main-section a:hover {
+    color: black;
+}
+
+#container-1,
+#container-2,
+#container-3 {
+    margin-left: 3rem;
+}
+
+#container-1 {
+    max-width: 60%;
+    margin-bottom: 2rem;
+}
+
+#container-3 {
+    margin-top: 2rem;
+}
+
+#container-3 button {
+    background-color: var(--button-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 5px 5px 1px rgba(0, 0, 0, .05);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+#container-3 button:hover {
+    background-color: black;
+}
+
+
+@font-face {
+    font-family: 'Norse';
+    src: url(assets/Norse-Bold.otf);
+}
