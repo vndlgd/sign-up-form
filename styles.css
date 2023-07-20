@@ -45,6 +45,7 @@ body {
     top: 25%;
     bottom: auto;
     height: 12rem;
+    box-sizing: border-box;
 }
 
 #logo-section h1 {
