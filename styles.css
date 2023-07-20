@@ -184,3 +184,9 @@ section {
     display: flex;
     gap: 4rem;
 }
+
+/* remove browser autocomplete color */
+/* https://stackoverflow.com/questions/2781549/removing-input-background-colour-for-chrome-autocomplete */
+input:-webkit-autofill {
+    -webkit-background-clip: text;
+}

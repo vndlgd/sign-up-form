@@ -31,7 +31,7 @@
         </div>
         <div id="section-2">
             <div id="container-2">
-                <form>
+                <form id="sign-up" method="post">
                     <p id="form-header">Let's do this!</p>
                     <section>
                         <div id="subsection-1">
@@ -59,7 +59,8 @@
                                 <label for="tel">
                                     PHONE NUMBER
                                 </label>
-                                <input type="tel" id="tel" name="tel" required>
+                                <input type="tel" id="tel" name="tel" required minlength="10" maxlength="10"
+                                    pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
                             </p>
                         </div>
                         <div id="subsection-3">
@@ -67,14 +68,15 @@
                                 <label for="password">
                                     PASSWORD
                                 </label>
-                                <input type="password" class="error" id="password" name="password" required>
+                                <input type="password" class="error" id="password" name="password" required
+                                    onchange="check_pass()">
                             </p>
                             <p>
                                 <label for="confirm_password">
                                     CONFIRM PASSWORD
                                 </label>
                                 <input type="password" class="error" id="confirm_password" name="confirm_password"
-                                    required>
+                                    required onchange="check_pass()">
                             </p>
                         </div>
                     </section>
@@ -83,7 +85,7 @@
         </div>
         <div id="section-3">
             <div id="container-3">
-                <button type="submit">Create Account</button>
+                <button type="submit" form="sign-up">Create Account</button>
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </div>
